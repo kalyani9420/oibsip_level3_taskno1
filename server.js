@@ -6,6 +6,8 @@ const path = require('path')
 // now app can use as a object which contain all functionality of express
 const PORT = process.env.PORT || 3300
 
+//assets
+app.use(express.static('public'))
 
 app.get('/' , (req , res) => {
     res.render('home')
