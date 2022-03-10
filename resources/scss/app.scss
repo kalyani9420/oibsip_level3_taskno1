@@ -4,11 +4,12 @@ body{
     font-family: 'Lato', sans-serif;
     -webkit-font-smoothing: antialiased;
      color: $dark;
-     height: 4000px;
+
 }
 
 nav li:last-child a{
     background-color: $primary;
+    box-shadow: 2px 2px 4px rgb(207, 207, 207);
     &:hover{
         background:$primary-hover;
     }
@@ -37,5 +38,52 @@ section.hero{
         background: $primary;
         border-color: $pure;
         color: $pure;
+    }
+}
+
+.btn-primary{
+    background: $primary;
+    transition: smooth;
+    box-shadow: 2px 2px 4px rgb(136, 135, 135);
+
+    &:hover{
+        background: $primary-hover;
+    }
+}
+
+.menu{
+
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px rgb(117, 117, 117);;
+}
+
+section.cart{
+    background: $secondary;
+    .amount{
+     color: $primary;
+    }
+}
+
+
+.order-now{
+    background: $primary;
+    transition: smooth;
+    box-shadow: 2px 2px 4px rgb(136, 135, 135);
+
+    &:hover{
+        background: $primary-hover;
+    }
+
+}
+
+section.login{
+    background: $secondary;
+    min-height: calc(100vh - 86px);
+    a{
+        color: $primary;
+        & :hover{
+            color: $primary-hover;
+
+        }
     }
 }
