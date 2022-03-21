@@ -21,8 +21,8 @@ mongoose.connect(
   "mongodb://127.0.0.1/pizza",
   { useNewUrlParser: true, useUnifiedTopology: true },
   (err) => {
-    // if(!err) console.log('db connect');
-    // else console.log('db error');
+    if(!err) console.log('Database connect...');
+    else console.log('Database error');
   }
 );
 
