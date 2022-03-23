@@ -87,7 +87,6 @@ updateStatus(order);
 
 //socket
 let socket = io()
-initAdmin(socket)
 //join
 //creating private room for each order using unique id here we can use order id it is itself unique
 
@@ -97,6 +96,7 @@ if(order){
 
 let adminAreaPath = window.location.pathname
 if(adminAreaPath.includes('admin')){
+    initAdmin(socket)
     socket.emit('join' , 'adminRoom')
 }
 
